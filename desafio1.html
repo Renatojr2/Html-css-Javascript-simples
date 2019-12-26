@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="desafio">
+    <input type="text" name="" id="num">
+    <button id="btn">Clique</button>
+    <div class="resposta"></div>
+
+
+
+  </div>
+
+  <script>
+    let btn = document.getElementById('btn')
+    let nun = document.getElementById('num');
+    let res = document.querySelector('.resposta');
+
+
+
+
+    function pegarValor(value) {
+      return value = parseInt(num.value)
+    }
+
+
+
+
+
+
+    btn.addEventListener('click', () => {
+      // res = parseInt(pegarValor())
+      // console.log(res)
+      if (num.value % 2 == 0) {
+        res.innerHTML = "Esse número é par!"
+      } else {
+        res.innerHTML = 'Ele é impar!'
+      }
+
+    })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
